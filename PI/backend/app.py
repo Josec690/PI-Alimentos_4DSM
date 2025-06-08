@@ -22,6 +22,9 @@ CORS(app)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'secreta')
 MONGO_URI = os.getenv('MONGO_URI')
 
+# Configurando CORS para permitir o header Authorization na rota /perfil
+CORS(app, resources={r"/perfil": {"origins": "*"}}, expose_headers='Authorization')
+
 # Conexão com o MongoDB
 client = MongoClient(MONGO_URI)
 db = client[os.getenv("DB_NAME")]

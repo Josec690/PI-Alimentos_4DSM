@@ -8,8 +8,8 @@
   font-family: 'Roboto', sans-serif;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  opacity: 0;
   animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
 }
 
 .user-container:hover {
@@ -37,6 +37,7 @@
 .user-info p {
   font-size: 16px;
   color: #555;
+  margin: 8px 0;
 }
 
 /* Botão de alterar senha */
@@ -66,7 +67,7 @@
   transform: translateY(1px);
 }
 
-/* Animação de entrada */
+/* Animação */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -74,6 +75,19 @@
   to {
     opacity: 1;
   }
+}
+
+/* Mensagens de carregamento e erro */
+.estado-feedback {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 60px;
+  color: #555;
+}
+
+.estado-feedback.erro {
+  color: #d32f2f;
+  font-weight: bold;
 }
 
 /* Responsividade */
@@ -115,4 +129,44 @@
     font-size: 14px;
     padding: 10px 14px;
   }
+}
+
+/* Avatar circular */
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #1976d2;
+  color: white;
+  border-radius: 50%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Botão de sair */
+.sair-botao {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #e53935;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.sair-botao:hover {
+  background-color: #c62828;
+  transform: translateY(-2px);
+}
+
+.sair-botao:active {
+  transform: translateY(1px);
 }

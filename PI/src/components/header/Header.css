@@ -55,3 +55,17 @@
   transform: rotate(45deg);
   z-index: 11;
 }
+
+.perfil-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.perfil-icon:hover {
+  transform: scale(1.1);
+}
