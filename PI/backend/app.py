@@ -423,6 +423,7 @@ def obter_receita(receita_id):
     except Exception as e:
         return jsonify({'erro': 'Erro interno do servidor'}), 500
 
+
 @app.route('/receitas', methods=['POST'])
 @verificar_token
 def criar_receita():

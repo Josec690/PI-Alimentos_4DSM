@@ -18,6 +18,7 @@ import Panqueca from './pages/carnes/Panqueca'
 import Pave from './pages/sobremesas/Pave'
 import SorveteMorango from './pages/sobremesas/SorveteMorango'
 import TortaLimao from './pages/sobremesas/TortaLimao'
+import CriarReceita from './pages/criarReceita/CriarReceita'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           <Route path='Pave'element={<Pave/>} />
           <Route path='SorveteMorango'element={<SorveteMorango/>} />
           <Route path='TortaLimao'element={<TortaLimao/>} />
+          <Route path='CriarReceita' element={<CriarReceita />} />
         </Routes>
       </BrowserRouter>
     </>

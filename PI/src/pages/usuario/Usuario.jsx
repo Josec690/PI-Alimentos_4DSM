@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import { useNavigate } from 'react-router-dom';
-import './Usuario.css'; // importante importar o CSS atualizado
+import './Usuario.css';
 
 function Usuario() {
   const navigate = useNavigate();
@@ -57,6 +57,9 @@ function Usuario() {
         <div className="alterar-senha-container">
           <button className="alterar-senha-botao" onClick={() => navigate('/alterar-senha')}>
             Alterar Senha
+          </button>
+          <button className="enviar-receita-botao" onClick={() => navigate('/criar-receita')}>
+            Enviar uma Receita
           </button>
           <button className="sair-botao" onClick={handleLogout}>
             Sair
